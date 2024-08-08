@@ -1,5 +1,4 @@
 import Navbar from '../_navbar/Navbar';
-import Brands from '../_utils/Brands';
 import SliderHome from '../_slider/SliderHome';
 import VideoGamesHome from '../_videogames/VideoGamesHome';
 
