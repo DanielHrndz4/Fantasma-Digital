@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    font-family: 'Raleway', 'Roboto Slab', sans-serif;
+}
+
+/* Para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento */
+}
+
+.filter-shadow {
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+.text-blend {
+    mix-blend-mode: difference;
+    color: white;
+}
+
+/* Archivo CSS o en el archivo de estilo global */
+.appBar-transparent {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.appBar-scrolled {
+    background-color: black;
+}
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-height: 1.2em;
+    /* Ajusta esto según tu preferencia */
+    max-height: 2.4em;
+    /* 2 líneas * line-height */
+    height: 2.4em;
+    word-break: break-word;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+}
