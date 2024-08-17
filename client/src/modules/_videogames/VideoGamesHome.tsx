@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import videogames from '../../assets/data/videogame.data';
 import CardShopAlt from '../_utils/CardProductAlt';
+import games from '../../assets/data/games';
 
 const VideoGamesHome: React.FC = () => {
     const [filter, setFilter] = useState<string>("All");
 
     // Función para filtrar videojuegos
-    const filteredVideogames = videogames.filter((game) => {
+    const filteredVideogames = games.filter((game) => {
         if (filter === "All") return true;
         if (filter === "PS4") return game.esPS4;
         if (filter === "PS5") return game.esPS5;

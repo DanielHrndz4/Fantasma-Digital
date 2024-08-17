@@ -1,8 +1,8 @@
 export interface VideoGames {
     titulo: string,
-    precioActual: number,
+    precioActual?: number | null,
     precioOriginal?: number | null,
+    imagen: string,
     esPS5: boolean,
     esPS4: boolean,
-    descripcion: string
 }
